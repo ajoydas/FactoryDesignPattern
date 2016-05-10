@@ -28,20 +28,33 @@ public class EnemyShipTesting {
                 //System.out.println("Ufo");
 
                 theEnemy = new UFOEnemyShip();
-                theEnemy.displayEnemyShip();
+                //theEnemy.displayEnemyShip();
 
             } else if (enemyShipOption.equals("R")) {
 
                 theEnemy = new RocketEnemyShip();
-                theEnemy.displayEnemyShip();
+                //theEnemy.displayEnemyShip();
 
             } else {
 
                 theEnemy = new BigUFOEnemyShip();
-                theEnemy.displayEnemyShip();
+                //theEnemy.displayEnemyShip();
 
             }
+
+            doStuffEnemy(theEnemy);
+
         }
+
+    }
+
+    public static void doStuffEnemy(EnemyShip anEnemyShip){
+
+        anEnemyShip.displayEnemyShip();
+
+        anEnemyShip.followHeroShip();
+
+        anEnemyShip.enemyShipShoots();
 
     }
 }
