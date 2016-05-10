@@ -8,9 +8,6 @@ public class EnemyShipTesting {
     public static void main(String[] args) {
         EnemyShip theEnemy = null;
 
-        // Old way of creating objects
-        // When we use new we are not being dynamic
-
         EnemyShip ufoShip = new UFOEnemyShip();
 
         System.out.print("\n");
